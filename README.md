@@ -1,26 +1,26 @@
-# Statistical Analysis of LeBron James' Performance (College Project)
+# Análise Estatística do Desempenho de LeBron James (Projeto de Faculdade)
 
-## Project Description
-This project performs a statistical analysis of the basketball player LeBron James' performance based on a dataset containing his game statistics. The Python script processes a CSV file (lebron_stats.csv), cleans and organizes the data, calculates descriptive statistics, and generates visualizations to better understand the player's performance over the years.
+## Descrição do Projeto
+Este projeto realiza uma análise estatística do desempenho do jogador de basquete LeBron James com base em um conjunto de dados contendo suas estatísticas de jogos. O script em Python processa um arquivo CSV (lebron_stats.csv), limpa e organiza os dados, calcula estatísticas descritivas e gera visualizações para melhor compreender o desempenho do jogador ao longo dos anos.
 
-## Features
-- Reads and processes data from a CSV file.
-- Removes irrelevant columns.
-- Converts and normalizes data (such as dates and minutes played).
-- Calculates descriptive statistical measures, including:
-    - Mean
-    - Mode
-    - Median
-    - Standard Deviation
-    - Variance
-- Generates a histogram to visualize the distribution of points per game.
+## Funcionalidades
+- Lê e processa dados de um arquivo CSV.
+- Remove colunas irrelevantes.
+- Converte e normaliza dados (como datas e minutos jogados).
+- Calcula medidas estatísticas descritivas, incluindo:
+    - Média
+    - Moda
+    - Mediana
+    - Desvio Padrão
+    - Variância
+- Gera um histograma para visualizar a distribuição de pontos por jogo.
 
-![Histogram](histograma.png)
+![Histograma](histograma.png)
 
-- Calculates and analyzes the skewness of the points distribution.
+- Calcula e analisa a assimetria da distribuição de pontos.
 
-## Requirements
-To run the project, the following Python libraries must be installed:
+## Requisitos
+Para executar o projeto, as seguintes bibliotecas Python devem estar instaladas:
 
 - pandas
 - numpy
@@ -29,19 +29,21 @@ To run the project, the following Python libraries must be installed:
 - statistics
 - math
 
-**If not installed, use the following command:**
-- pip install pandas numpy scipy matplotlib
+**Caso não estejam instaladas, utilize o seguinte comando:**
+```bash
+pip install pandas numpy scipy matplotlib
+```
 
-## How to run
-1. Ensure that the lebron_stats.csv file is in the same directory as the analise_lebron.py script.
-
-2. Run the Python script:
+## Como Executar
+1. Certifique-se de que o arquivo lebron_stats.csv esteja no mesmo diretório que o script analise_lebron.py.
+2. Execute o script Python:
+```bash
 python analise_lebron.py
+``` 
+3. O programa exibirá as estatísticas calculadas no terminal e gerará um histograma para análise visual.
 
-3. The program will display the calculated statistics in the terminal and generate a histogram for visual analysis.
-
-## Expected Output
-- Basic statistics of the processed data.
-- Descriptive measures for the "PTS" (points per game) column.
-- Histogram of the distribution of points per game.
-- Calculation of the skewness coefficient and determination of the type of points distribution.
+## Resultados Esperados
+- Estatísticas básicas dos dados processados.
+- Medidas descritivas para a coluna "PTS" (pontos por jogo).
+- Histograma da distribuição de pontos por jogo.
+- Cálculo do coeficiente de assimetria e determinação do tipo de distribuição de pontos.
